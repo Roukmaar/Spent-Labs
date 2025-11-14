@@ -30,7 +30,7 @@ export default function userdashboard() {
       {/* Sidebar */}
     <aside className="w-20 md:w-60 bg-white shadow-sm">
         <div className="py-3 px-2  border-b border-gray-300 shadow-teal-100 shadow-xl">
-            <Link href="">
+            <Link href="/.">
             <div className="md:flex items-center gap-2 ">
                 <div className="ml-3 md:ml-0 w-9 h-9 bg-teal-500 rounded-lg flex items-center justify-center">
                         <FontAwesomeIcon icon={faFlask} className="w-5 h-5 text-white" />
@@ -56,10 +56,7 @@ export default function userdashboard() {
                 <FontAwesomeIcon icon={faCalendar} className="w-5 h-5 ml-1 md:ml-0" />
                 <span className="font-medium hidden md:flex">Events</span>
             </button>
-            <button className="w-full flex items-center gap-3 px-6 py-3 text-left hover:text-teal-600 hover:bg-cyan-50 mt-8">
-                <FontAwesomeIcon icon={faNewspaper} className="w-5 h-5 ml-1 md:ml-0" />
-                <span className="font-medium hidden md:flex">News</span>
-            </button>
+            
             <button className="w-full flex items-center gap-3 px-6 py-3 text-left hover:text-teal-600 hover:bg-cyan-50 mt-8">
                 <FontAwesomeIcon icon={faUser} className="w-5 h-5 ml-1 md:ml-0" />
                 <span className="font-medium hidden md:flex">Profile</span>

@@ -28,7 +28,7 @@ export default function Sidebar() {
 
     <aside className="w-20 h-full md:w-60 bg-white z-10 shadow-md ">
         <div className="p-2.5 shadow-blue-200 shadow-xl bg-white">
-            <Link href="">
+            <Link href="/.">
             <div className="md:flex items-center gap-2 ">
                 <div className="w-9 h-9 bg-blue-950 rounded-lg flex items-center justify-center ml-3 md:ml-0">
                         <FontAwesomeIcon icon={faFlask} className="w-6 h-6 text-white" />
@@ -90,7 +90,7 @@ export default function Sidebar() {
                 <span className="font-medium hidden md:flex">Settings</span>
             </button>
             </Link>
-            <Link href="">
+            <Link href="/.">
             <button className="w-full flex items-center gap-3 px-6 py-3 text-left text-red-600 hover:bg-red-50 mt-25 border-t border-gray-200 ">
                 <FontAwesomeIcon icon={faArrowRightToBracket} className="w-5 h-5 ml-1 md:ml-0" />
                 <span className="font-medium hidden md:flex">logout</span>
