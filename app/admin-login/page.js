@@ -11,7 +11,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 export default function Page() {
   return (
     <main className="font-sans font-bold bg-blue-950 h-screen flex justify-center items-center">
-      <div className="w-100 md:w-120 bg-white flex flex-col justify-center items-center py-10 rounded-2xl space-y-3 shadow-xl md:shadow-cyan-800">
+      <div className="w-100 md:w-120 bg-white flex flex-col justify-center items-center py-10 rounded-2xl space-y-3 shadow-2xl md:shadow-blue-500">
         <div className="bg-blue-950 w-20 rounded-2xl">
           <FontAwesomeIcon icon={faFlask} className="text-sm text-white px-5 py-5" />
         </div>
@@ -20,8 +20,8 @@ export default function Page() {
         <form className="flex flex-col space-y-2 px-5 ">
           <label className="font-medium">Email Address</label>
           <input type="email"
-                  placeholder="admin@spentdigitallab.com"
-                  className="placeholder:font-medium placeholder:pl-1 rounded-xl border border-gray-300 px-2 py-2 hover:border-teal-700 hover:cursor-pointer focus:outline-1 focus:border-cyan-100"
+            placeholder="admin@spentdigitallab.com"
+            className="placeholder:font-medium placeholder:pl-1 rounded-xl border border-gray-300 px-2 py-2 hover:border-blue-800 hover:cursor-pointer focus:outline-1 focus:border-blue-300"
           />
           <FontAwesomeIcon
             icon={faEnvelope}
@@ -29,8 +29,8 @@ export default function Page() {
           />
           <label className="font-medium">Password</label>
           <input type="email"
-                  placeholder="Enter your password"
-                  className="placeholder:font-medium placeholder:pl-1 rounded-xl border border-gray-300 px-2 py-2 hover:border-teal-700 hover:cursor-pointer focus:outline-1 focus:border-cyan-100"
+            placeholder="Enter your password"
+            className="placeholder:font-medium placeholder:pl-1 rounded-xl border border-gray-300 px-2 py-2 hover:border-blue-800 hover:cursor-pointer focus:outline-1 focus:border-blue-300"
           />
           <span className="text-gray-400 text-xs font-medium">Password must have 12+ characters with letters, numbers and symbols.</span>
           <FontAwesomeIcon
@@ -40,31 +40,31 @@ export default function Page() {
           <div className="flex justify-between">
             <div className="flex space-x-0.5">
               <input
-                type="checkbox"/>
+                type="checkbox" />
               <span className="font-medium text-sm ">Remember me for 30 days</span>
             </div>
-            <a className="font-medium text-sm text-teal-500 hover:text-teal-700 hover:cursor-pointer hover:underline">Forgot password?</a>
+            <a className="font-medium text-sm text-blue-800 hover:text-blue-900 hover:cursor-pointer hover:underline">Forgot password?</a>
           </div>
           <Link href="/admin-dashboard"
-              className="w-full">
-          <button className="w-full bg-teal-500 text-white rounded-md h-10 hover:bg-teal-600 hover:cursor-pointer">Sign In</button>
+            className="w-full">
+            <button className="w-full bg-blue-950 text-white rounded-md h-10 hover:bg-blue-900 hover:cursor-pointer">Sign In</button>
           </Link>
         </form>
         <div className="flex py-3">
-        <hr className="w-30 md:w-34 text-gray-300"/><span className="font-medium text-gray-400 text-sm -my-2 px-2">Or continue with</span><hr className="w-30 md:w-34 text-gray-300"/>
+          <hr className="w-30 md:w-34 text-gray-300" /><span className="font-medium text-gray-400 text-sm -my-2 px-2">Or continue with</span><hr className="w-30 md:w-34 text-gray-300" />
         </div>
         <div className="flex gap-5">
-          <button className="border border-gray-300 font-medium w-42 md:w-47 py-3 rounded-md flex justify-center items-center gap-2 hover:bg-teal-600 hover:cursor-pointer hover:text-white"><FontAwesomeIcon icon={faGoogle} className="size-5 text-red-600"/>Google</button>
-          <button className="border border-gray-300 font-medium w-42 md:w-47 py-3 rounded-md flex justify-center items-center gap-2 hover:bg-teal-600 hover:cursor-pointer hover:text-white"><FontAwesomeIcon icon={faGithub} className="size-5 text-black"/>Github</button>
+          <button className="border border-gray-300 font-medium w-42 md:w-47 py-3 rounded-md flex justify-center items-center gap-2 hover:bg-blue-900 hover:cursor-pointer hover:text-white"><FontAwesomeIcon icon={faGoogle} className="size-5 text-red-600" />Google</button>
+          <button className="border border-gray-300 font-medium w-42 md:w-47 py-3 rounded-md flex justify-center items-center gap-2 hover:bg-blue-900 hover:cursor-pointer hover:text-white"><FontAwesomeIcon icon={faGithub} className="size-5 text-black" />Github</button>
         </div>
-          <span className="flex text-gray-400 text-sm font-medium py-3">Dont&apos;t have admin access?
-            <Link href="/user-login">
-              <h2 className="font-medium text-sm text-teal-500 hover:text-teal-700 hover:cursor-pointer hover:underline">
-                Login as User
-              </h2>
-            </Link>          
-          </span>
+        <span className="flex text-gray-400 text-sm font-medium py-3">Dont&apos;t have admin access?
+          <Link href="/user-login">
+            <h2 className="font-medium text-sm text-blue-800 hover:text-blue-900 hover:cursor-pointer hover:underline">
+              Login as User
+            </h2>
+          </Link>
+        </span>
       </div>
-  </main>
+    </main>
   );
 }

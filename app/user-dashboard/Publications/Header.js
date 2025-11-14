@@ -9,9 +9,9 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 export default function header() {
   return (
-    <section className='w-full'>
+    <section className=''>
 
-            <header className="bg-white border-b border-gray-300 shadow-blue-100 shadow-xl ">
+        <header className="bg-white border-b border-gray-300 shadow-teal-100 shadow-xl ">
             <div className="px-5 py-2 md:py-3.5 flex justify-between">
                 <div className="flex gap-4 flex-1 max-w-md">
                     <div className=" justify-center flex">
@@ -28,7 +28,7 @@ export default function header() {
                 </div>
                 <div className="flex items-center gap-4 ">
                     <div className="flex items-center gap-2">
-                        <div className="w-10 h-10 bg-blue-950 rounded-full flex items-center justify-center text-white font-semibold">
+                        <div className="w-10 h-10 bg-teal-500 rounded-full flex items-center justify-center text-white font-semibold">
                             SP
                         </div>
                             <span className="text-xl font-medium text-gray-700">Spirit Phillips</span>

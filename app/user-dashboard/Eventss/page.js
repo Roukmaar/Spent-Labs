@@ -13,12 +13,10 @@ export default function page() {
                 <Sidebar />
                 <div className="flex-1 flex flex-col">
                     <Header />
-                    <div className="p-5 md:p-10 w-full">
-                        <h2 className='text-4xl md:text-5xl font-semibold text-gray-800 py-2 mb-5 mt-5 '>Publications</h2>
+                    <div className="pt-12 px-5 md:px-10 pb-5 md:pb-10 w-full">
+                        <h2 className='text-4xl md:text-5xl font-semibold text-gray-800 mb-4'>Events</h2>
                         {/* Add your main content for the Publications page here */}
                         <Content/>
-
-
                     </div>
                 </div>
             </div>

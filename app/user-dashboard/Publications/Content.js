@@ -5,14 +5,14 @@ import React from 'react'
 
 export default function Content() {
   return (
-   <section className=''>
-    <div className='space-y-5 w-full '>
+   <section>
+    <div className='space-y-5 w-full'>
         <div className='md:flex gap-5'>
             <input type="text" placeholder="🔎 Search Publications..." 
             className="hidden md:flex md:flex-2 px-3 border border-gray-300 rounded-md focus:outline-none "/>
             
             <div className='flex space-y-3 md:space-y-0 space-x-3 mt-3 md:mt-0 flex-2'>
-                <div className='flex-1 border border-gray-300 p-3 rounded-md md:w-full hover:cursor-pointer hover:border-blue-950'>
+                <div className='flex-1 border border-gray-300 p-3 rounded-md md:w-full hover:cursor-pointer hover:border-teal-400'>
                     <label className="font-light text-sm justify-center flex ">Type:
                         <select className='focus:outline-none hover:cursor-pointer'>
                             <option value="">All Types</option>
@@ -22,7 +22,7 @@ export default function Content() {
                         </select>
                     </label>
                 </div>
-                <div className='h-11.5 border flex-1 border-gray-300 p-3 rounded-md md:w-full hover:cursor-pointer hover:border-blue-950'>
+                <div className='h-11.5 border flex-1 border-gray-300 p-3 rounded-md md:w-full hover:cursor-pointer hover:border-teal-400'>
                     <label className="font-light text-sm justify-center flex">Type:
                         <select className='focus:outline-none hover:cursor-pointer'>
                             <option value="">All Status</option>

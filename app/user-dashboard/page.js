@@ -19,6 +19,7 @@ import { faFlask } from '@fortawesome/free-solid-svg-icons';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { faArrowRightToBracket } from '@fortawesome/free-solid-svg-icons';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
+import { faChartLine } from '@fortawesome/free-solid-svg-icons';
 
 
 export default function userdashboard() {
@@ -30,41 +31,63 @@ export default function userdashboard() {
       {/* Sidebar */}
     <aside className="w-20 md:w-60 bg-white shadow-sm">
         <div className="py-3 px-2  border-b border-gray-300 shadow-teal-100 shadow-xl">
-            <Link href="/.">
-            <div className="md:flex items-center gap-2 ">
+                    <Link href="/.">
+                        <div className="md:flex items-center gap-2 ">
                 <div className="ml-3 md:ml-0 w-9 h-9 bg-teal-500 rounded-lg flex items-center justify-center">
-                        <FontAwesomeIcon icon={faFlask} className="w-5 h-5 text-white" />
+                                <FontAwesomeIcon
+                                    icon={faFlask}
+                                    className="w-6 h-6 text-white"
+                                />
+                            </div>
+                            <div className="">
+                                <h1 className="text-xl font-semibold text-gray-800 hidden md:flex">
+                                    Spent Digital Labs
+                                </h1>
+                                <h1 className="text-sm font-medium text-gray-300 hidden md:flex">
+                                    User Dashboard
+                                </h1>
+                            </div>
+                        </div>
+                    </Link>
                 </div>
-            <h1 className="text-xl font-semibold text-gray-800 hidden md:flex">Spent Digital Labs</h1>
-            </div>
-            </Link>
-        </div>
-        <nav className="flex flex-col">
-            <button className="w-full flex items-center gap-3 px-6 py-3 text-left hover:text-teal-600 hover:bg-cyan-50 mt-8"         >
-                <FontAwesomeIcon icon={faHome} className="w-5 h-5 ml-1 md:ml-0" />
-                <span className="font-medium hidden md:flex">Home</span>
+        
+        <nav className="flex flex-col px-0.5 md:px-0 mt-12">
+            <Link href="/user-dashboard">
+            <button className="w-full flex items-center gap-3 px-6 py-3 text-left hover:text-teal-600 bg-cyan-50 mt-8"         >
+                <FontAwesomeIcon icon={faChartLine} className="w-5 h-5 ml-1 md:ml-0" />
+                <span className="font-medium hidden md:flex">Dashboard</span>
             </button>
+            </Link>
+            <Link href="/user-dashboard/Publications">
             <button className="w-full flex items-center gap-3 px-6 py-3 text-left hover:text-teal-600 hover:bg-cyan-50 mt-8">
                 <FontAwesomeIcon icon={faFileText} className="w-5 h-5 ml-1 md:ml-0" />
                 <span className="font-medium hidden md:flex">Publications</span>
             </button>
+            </Link>
+            <Link href="/user-dashboard/Projects">
             <button className="w-full flex items-center gap-3 px-6 py-3 text-left hover:text-teal-600 hover:bg-cyan-50 mt-8">
                 <FontAwesomeIcon icon={faCode} className="w-5 h-5 ml-1 md:ml-0" />
                 <span className="font-medium hidden md:flex">Projects</span>
             </button>
+            </Link>
+            <Link href="/user-dashboard/Eventss">
             <button className="w-full flex items-center gap-3 px-6 py-3 text-left hover:text-teal-600 hover:bg-cyan-50 mt-8">
                 <FontAwesomeIcon icon={faCalendar} className="w-5 h-5 ml-1 md:ml-0" />
                 <span className="font-medium hidden md:flex">Events</span>
             </button>
-            
+            </Link>
+            <Link href="/user-dashboard/Settingss">
             <button className="w-full flex items-center gap-3 px-6 py-3 text-left hover:text-teal-600 hover:bg-cyan-50 mt-8">
                 <FontAwesomeIcon icon={faUser} className="w-5 h-5 ml-1 md:ml-0" />
                 <span className="font-medium hidden md:flex">Profile</span>
             </button>
+            </Link>
+            <Link href="./">
             <button className="w-full flex items-center gap-3 px-6 py-3 text-left text-red-600 hover:bg-red-50 mt-25 border-t border-gray-200 ">
                 <FontAwesomeIcon icon={faArrowRightToBracket} className="w-5 h-5 ml-1 md:ml-0" />
                 <span className="font-medium hidden md:flex">logout</span>
-            </button>  
+            </button> 
+            </Link> 
         </nav>
     </aside>
 
@@ -72,14 +95,15 @@ export default function userdashboard() {
     <main className="flex-1">
         {/* Header */}
         <header className="bg-white border-b border-gray-300 shadow-teal-100 shadow-xl ">
-            <div className="px-5 py-2.5 flex justify-between">
+            <div className="px-5 py-2 md:py-3.5 flex justify-between">
                 <div className="flex gap-4 flex-1 max-w-md">
                     <div className=" justify-center flex">
                         <div className="text-gray-400 w-5" />
                         <input
                             type="text"
-                            placeholder="Search publications, projects..."
-                            className="hidden md:flex pl-5 pr-4 py-2 border border-gray-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-teal-500"/>
+                            placeholder="🔎  Search..."
+                            className="hidden md:flex pl-5 pr-4 py-2 border border-gray-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-teal-500"
+                        />
                         <button className="relative -ml-3 py-2 px-4 text-gray-600 hover:bg-gray-100 rounded-lg md:hidden">
                         <FontAwesomeIcon icon={faMagnifyingGlass} className="size-5 flex md:hidden" />
                         </button>
@@ -102,9 +126,9 @@ export default function userdashboard() {
 
         {/* Dashboard Content */}
         <div className="p-8">
-            <div className="mb-8 flex gap-4">
-                <h2 className="text-2xl font-bold text-gray-800">Welcome back, Spirit!</h2>
-                <FontAwesomeIcon icon={faCheckCircle} className="w-7 h-7 text-teal-500" />
+            <div className="mb-8 flex items-center">
+                <h2  className='gap-1 flex text-4xl md:text-5xl font-semibold text-gray-800 py-2 mb-5'>Welcome back, Spirit!<FontAwesomeIcon icon={faCheckCircle} className="hidden md:flex md:size-10 text-teal-500 size-5" /></h2>
+                
             </div>
 
           {/* Stats Cards */}
@@ -160,7 +184,7 @@ export default function userdashboard() {
         <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-100">
             <div className="md:flex items-center justify-between mb-4">
                 <h3 className="text-lg font-semibold text-gray-800">Recent Publications</h3>
-                <button className="px-4 py-2 bg-teal-600 text-white rounded-lg text-sm font-medium hover:bg-teal-700 transition flex items-center gap-2">
+                <button className="px-4 py-2 bg-teal-600 hover:bg-teal-700 text-white rounded-lg text-sm font-medium transition flex items-center gap-2">
                     <FontAwesomeIcon icon={faPlus}className="w-4 h-4" />
                     New Publication
                 </button>
