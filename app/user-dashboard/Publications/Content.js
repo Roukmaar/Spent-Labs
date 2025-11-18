@@ -9,7 +9,7 @@ export default function Content() {
     
     <div className='space-y-5 w-full'>
         <div className='md:flex gap-5'>
-                      <button className="cursor-pointer bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-lg text-sm">+Add Publication</button>
+                      <button className="cursor-pointer bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-lg text-sm">+ Add Publication</button>
             <input type="text" placeholder="🔎 Search Publications..." 
             className="hidden md:flex md:flex-2 px-3 border border-gray-300 rounded-md focus:outline-none "/>
             
