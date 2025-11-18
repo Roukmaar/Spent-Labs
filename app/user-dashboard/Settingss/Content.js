@@ -29,7 +29,7 @@ export default function Content() {
     <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center text-xl font-semibold text-gray-600">
             SP
           </div>
-          <div className="flex gap-2 cursor-pointer ">
+          <div className="md:flex space-y-3 gap-2 cursor-pointer ">
             <button className="hover:bg-gray-200 text-black px-4 py-2 border rounded-md flex items-center gap-2 text-sm">
               <FontAwesomeIcon icon={faUpload} className='size-4 text-teal-500'/> Upload Photo
             </button>
